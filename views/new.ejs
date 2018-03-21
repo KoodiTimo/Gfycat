@@ -1,0 +1,20 @@
+<% include ./partials/header %>
+
+
+<div class="ui main text container segment">
+  <div class="ui huge header">New Jiffy</div>
+  <form class="ui form" action="/gfycat" method="POST">
+    <div class="field">
+        <label>Title</label>
+            <input type="text" name="gif[title]" placeholder="Title of your jiffy">
+    </div>
+    <div class="field">
+          <label>Image</label>
+            <input type="text" name="gif[image]" placeholder="Image of your jiffy">
+    </div>
+    <input class="ui black huge button" type="submit" value="Upload">
+  </form>
+</div>
+
+
+<% include ./partials/footer %>

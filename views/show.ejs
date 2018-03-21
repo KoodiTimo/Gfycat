@@ -1,0 +1,20 @@
+<% include ./partials/header %>
+
+
+<div class="ui main text container segment">
+    <div class="ui huge header"><%= gif.title %></div>
+  <div class="ui top attached">
+      <div class="item">
+        <img class="ui centered rounded image" src="<%= gif.image %>">
+        <div class="content"><span><%= gif.idea %></span></div>
+        <div class="created"><p>Posted: <%= gif.created.toDateString(); %></p></div>
+    </div>
+    <a class="ui black basic button" href="/gfycat/<%= gif.idea %>/edit">Edit</a>
+    <form id="delete" action="/gfycat/<%= gif.idea %>?_method=DELETE" method="POST">
+      <button class="UI RED BASIC BUTTON">Delete</button>
+    </form>
+    </div>
+  </div>
+
+
+<% include ./partials/footer %>

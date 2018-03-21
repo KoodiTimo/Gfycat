@@ -1,0 +1,47 @@
+i.icon {
+  font-size: 2em;
+}
+.container.ui.main {
+
+}
+
+div.ui.main.text.container.segment {
+  margin-top: 8.0em;
+  text-align:center;
+}
+#delete {
+  display:inline;
+}
+a.ui {
+
+}
+a.ui.image {
+  display:inline;
+  float:left;
+  margin: 1%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+
+  border-style:solid;
+  border-width:1px;
+  border-color:gray;
+}
+a.ui.image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+a.ui.image:hover {
+  -webkit-filter:drop-shadow(4px 4px 5px black);
+  filter:drop-shadow(3px 3px 4px black);
+
+
+}

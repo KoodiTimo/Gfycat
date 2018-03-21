@@ -1,0 +1,6 @@
+<% include ./partials/header %>
+<h1>Gifmgur</h1>
+          <% gifs.forEach(function(gif) { %>
+          <a class="ui image" href="/gfycat/<%= gif.idea %>"><img alt="<%= gif.title %>" src="<%= gif.image %>"></a>
+          <% }) %>
+<% include ./partials/footer %>
